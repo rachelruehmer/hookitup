@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const User = () => {
 
@@ -14,6 +14,8 @@ const User = () => {
     useEffect(() => {
         getUsers();
     }, []);
+
+{/* <Link to ="/:id/details">View Details</Link> */}
 
     return (
         <div className="container">
